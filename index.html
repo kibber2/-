@@ -14,6 +14,7 @@ body {
     padding: 40px;
 }
 
+    
 h1 {
     text-align: center;
     letter-spacing: 8px;
@@ -21,34 +22,12 @@ h1 {
 
 a {
     color: #aaa;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #fff;
 }
 
 .box {
     border: 1px solid #555;
     padding: 20px;
     margin-top: 30px;
-}
-
-/* 右上の音楽プレイヤー */
-.player {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
-}
-
-/* メイン表示部分 */
-iframe {
-    width: 100%;
-    height: 600px;
-    border: 1px solid #555;
-    margin-top: 30px;
-    background-color: #111;
 }
 </style>
 
@@ -58,32 +37,24 @@ iframe {
 
 <h1>きっべ～る</h1>
 
-<!-- BGM -->
-<audio id="bgm" controls loop class="player">
-    <source src="大団円.mp3" type="audio/mpeg">
-</audio>
+<p style="text-align:center;">
+<br>
 
-<script>
-document.addEventListener("click", function () {
-    document.getElementById("bgm").play();
-}, { once: true });
-</script>
+</p>
 
 <div class="box">
 
+
 <ul>
-    <li><a href="01.html" target="main">?</a></li>
-    <li><a href="02.html" target="main">??</a></li>
-    <li><a href="03.html" target="main">???</a></li>
-    <li><a href="04.html" target="main">????</a></li>
-    <li><a href="05.html" target="main">?????</a></li>
-    <li><a href="06.html" target="main">??????</a></li>
+<li><a href="01.html">?</a></li>
+<li><a href="02.html">??</a></li>
+<li><a href="03.html">???</a></li>
+<li><a href="04.html">????</a></li>
+<li><a href="05.html">?????</a></li>
+    <li><a href="06.html">??????</a></li>
 </ul>
 
 </div>
-
-<!-- ここに各ページが表示される -->
-<iframe name="main" src="01.html"></iframe>
 
 </body>
 </html>
